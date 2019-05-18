@@ -10,7 +10,7 @@ export class RequestService {
   url = "http://localhost:3000/send-mail"
 
   constructor(private http: HttpClient) { }
-  recieveRequest (request: CubeRequest) {
+  makeRequest (request: CubeRequest) {
     let body = {
       params: {
         'firstName': request.firstName,
@@ -25,4 +25,3 @@ export class RequestService {
     return this.http.post(this.url, body).subscribe(res=>console.log(res)) ;
   }
 }
- 

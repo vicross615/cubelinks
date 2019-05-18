@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: auto;
 }
 header {
     background: black;
@@ -19,6 +20,11 @@ header {
     font-family: "roboto";
 }
 
+.logo-container, .logo, .cubelinks-logo-frame{
+  height: 100px;
+}
+
+
 .contact-group {
     width: 100%;
 }
@@ -27,9 +33,8 @@ i {
     color: rgb(192, 192, 229);
     font-weight: 700;
 }
-section {
+.cubelinks-logo-frame {
     display: flex;
-    flex-direction: column;
     width: 100%;
     justify-content: center;
     cursor: pointer;

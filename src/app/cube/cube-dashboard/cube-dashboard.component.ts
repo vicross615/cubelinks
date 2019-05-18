@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-cube-dashboard',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cube-dashboard.component.scss']
 })
 export class CubeDashboardComponent implements OnInit {
+  showMenu: boolean = false;
+
 
   constructor() { }
+
 
   ngOnInit() {
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CubeRequest } from '../../models/CubeRequest';
 import { RequestService } from '../../services/request.service';
 @Component({
@@ -7,17 +8,20 @@ import { RequestService } from '../../services/request.service';
   styleUrls: ['./request.component.scss']
 })
 export class RequestComponent implements OnInit {
+
+requestSent: boolean = false;
+
 firstName: string;
 lastName: string;
 email: string;
 location: string;
 phoneNumber: string;
 message: string;
-  constructor(private requestService: RequestService ) { }
+  constructor(private requestService: RequestService, private router: Router ) { }
 
   ngOnInit() {
   }
-  recieveRequest()  {
+  makeRequest()  {
     var request: CubeRequest = {
       firstName: this.firstName,
       lastName: this.lastName,
@@ -26,7 +30,10 @@ message: string;
       phoneNumber: this.phoneNumber,
       message: this.message
     }
-    this.requestService.recieveRequest(request)
+    this.requestService.makeRequest(request: CubeRequest).subscribe((res)= {
+        // res ? requestSent = true
+        //this.router.navigateTo('');
+    });
   }
 
 
