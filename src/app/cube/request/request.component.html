@@ -15,6 +15,7 @@
       <span></span>
     </div>
   </div>
+
   <div class="form-container" data-scroll-index="0">
       <div class="container">
         <span class="form-header">
@@ -54,6 +55,9 @@
             <textarea id="subject" name="subject" [(ngModel)]="message" placeholder="Write something.." style="height:150px"></textarea>
         
             <input type="submit" value="Submit" (click)="makeRequest()">
+            <span class="loading">
+              Loading
+            </span>
           </form>
         </div>
   </div>

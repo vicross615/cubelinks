@@ -1,0 +1,15 @@
+.icon_container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: whitesmoke;
+  box-shadow: #1a1a4e;
+}
+
+#icon_good, icon {
+  width: 50px;
+  height: 150px;
+  border-radius: 15px;
+  background: whitesmoke;
+  box-shadow: #1a1a4e;
+}

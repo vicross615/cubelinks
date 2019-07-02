@@ -25,6 +25,7 @@ import { NewsComponent } from './views/news/news.component';
 import { ContactUsComponent } from './views/contact-us/contact-us.component';
 import { TestimonialsComponent } from './cube/views/testimonials/testimonials.component';
 import { TempPageComponent } from './cube/auxiliary/temp-page/temp-page.component';
+import {  SuccessComponent } from './cube/auxiliary/success/success.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,9 @@ import { TempPageComponent } from './cube/auxiliary/temp-page/temp-page.componen
     NewsComponent,
     ContactUsComponent,
     TestimonialsComponent,
-    TempPageComponent
+    TempPageComponent,
+    SuccessComponent
+
   ],
   imports: [
     BrowserModule,
